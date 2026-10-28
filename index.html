@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JANORA COMFORT | Comfort in Every Moment</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8f0e6;
+    color: #4b1725;
+}
+
+.site-header {
+    background: linear-gradient(120deg, #701f35 0%, #8b5260 48%, #ead8c5 100%);
+    padding: 22px 5%;
+}
+
+.brand-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.logo-area {
+    flex: 0 0 auto;
+}
+
+.logo-area img {
+    display: block;
+    width: 125px;
+    height: 125px;
+    object-fit: contain;
+    border: none;
+    background: transparent;
+}
+
+.brand-name {
+    color: #3b0b19;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(35px, 5vw, 58px);
+    letter-spacing: 3px;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.tagline {
+    color: #f7e4c4;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    margin: 12px 0 0;
+}
+
+.navigation {
+    background: #f8f0e6;
+    padding: 15px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    border-bottom: 1px solid #e5d1bc;
+}
+
+.navigation a {
+    color: #701f35;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navigation a:hover {
+    color: #a77b35;
+}
+
+.search-area {
+    padding: 22px 15px 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-form {
+    display: flex;
+    width: 100%;
+    max-width: 560px;
+    border: 1px solid #d6bba7;
+    border-radius: 30px;
+    overflow: hidden;
+    background: white;
+}
+
+.search-form input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    padding: 14px 20px;
+    font-size: 16px;
+    background: transparent;
+}
+
+.search-form button {
+    border: none;
+    padding: 14px 22px;
+    background: #701f35;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background: #a77b35;
+}
+
+.hero {
+    max-width: 1200px;
+    margin: auto;
+    padding: 45px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(32px, 4vw, 48px);
+    color: #701f35;
+    line-height: 1.2;
+    margin: 0 0 18px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.hero-tagline {
+    color: #a77b35;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px !important;
+    font-weight: bold;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 14px 25px;
+    background: #701f35;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #a77b35;
+}
+
+.hero-gallery {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    align-items: center;
+}
+
+.hero-gallery img {
+    width: 100%;
+    height: 230px;
+    object-fit: contain;
+    background: #fffaf4;
+    border-radius: 14px;
+    padding: 10px;
+    box-shadow: 0 5px 18px #701f3512;
+}
+
+.hero-gallery img:first-child {
+    grid-column: 1 / -1;
+    height: 270px;
+}
+
+.info-section {
+    padding: 45px 7%;
+    text-align: center;
+    background: #f3e5d6;
+    margin-top: 20px;
+}
+
+.info-section h2 {
+    color: #701f35;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 32px;
+}
+
+.info-section p {
+    max-width: 800px;
+    margin: 12px auto;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.contact-details {
+    line-height: 2;
+}
+
+.contact-details a {
+    color: #701f35;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 22px 15px;
+    background: #f8f0e6;
+    color: #701f35;
+    border-top: 1px solid #e5d1bc;
+}
+
+footer p {
+    margin: 7px;
+}
+
+@media (max-width: 700px) {
+    .brand-row {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .logo-area img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .brand-name {
+        font-size: 34px;
+        letter-spacing: 2px;
+    }
+
+    .tagline {
+        font-size: 21px;
+    }
+
+    .navigation {
+        gap: 18px;
+    }
+
+    .navigation a {
+        font-size: 14px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .hero-gallery {
+        width: 100%;
+    }
+
+    .hero-gallery img {
+        height: 180px;
+    }
+
+    .hero-gallery img:first-child {
+        height: 220px;
+    }
+}
+.certifications {
+    background: #f7f0e7;
+    padding: 35px 20px;
+    text-align: center;
+    border-top: 2px solid #c9a76b;
+}
+
+.certifications h2 {
+    color: #641f32;
+    font-family: Georgia, serif;
+    margin-bottom: 10px;
+}
+
+.certifications p {
+    margin-bottom: 20px;
+}
+
+.certification-image {
+    display: block;
+    width: 700px;
+    max-width: 900%;
+    min-width: 0;
+    height: auto;
+    margin: 20px auto;
+    object-fit: contain;
+}
+.whatsapp-button {
+    display: inline-block;
+    background-color: #800020;
+    color: white;
+    padding: 13px 26px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.whatsapp-button:hover {
+    background-color: #5c0017;
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="brand-row">
+        <div class="logo-area">
+            <img src="janora-logo.jpg" alt="Janora Comfort Logo">
+        </div>
+
+        <div>
+            <h1 class="brand-name">JANORA COMFORT</h1>
+            <p class="tagline">Comfort in Every Moment</p>
+        </div>
+    </div>
+</header>
+
+<nav class="navigation">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+
+<div class="search-area">
+    <form class="search-form" action="products.html" method="get">
+        <input
+            type="search"
+            name="search"
+            placeholder="Search pads, sizes, bamboo, anion..."
+            aria-label="Search products">
+        <button type="submit">Search</button>
+    </form>
+</div>
+
+<main>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Your Comfort, Our Priority</h2>
+
+            <p class="hero-tagline">Comfort in Every Moment</p>
+
+            <p>
+                Discover the Janora Comfort personal care range,
+                thoughtfully presented to help you find the products
+                that suit your needs.
+            </p>
+
+            <p>
+                Explore our cotton, Green Anion, Ring Anion and Bamboo
+                sanitary pads, along with other personal care products.
+            </p>
+
+            <a class="button" href="products.html">Explore Our Products</a>
+        </div>
+
+        <div class="hero-gallery">
+            <img src="green anion 320mm.jpeg"
+                 alt="Green Anion sanitary pad">
+
+            <img src="Baby Pampers.jpeg"
+                 alt="Pure Cotton sanitary pad">
+
+            <img src="bamboo 350mm.jpeg"
+                 alt="Bamboo sanitary pad">
+        </div>
+    </section>
+<a href="https://wa.me/919994016624"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="whatsapp-button">
+    Chat on WhatsApp
+</a>
+      
+    </section>
+</main>
+<section class="certifications">
+    <h2>Our Certifications &amp; Initiatives</h2>
+
+    <p class="certification-note">
+        Quality, responsibility and cleanliness matter to us.
+    </p>
+
+    <img
+        src="certifications.jpeg"
+        alt="Certification and initiative logos"
+        class="certification-image"
+    >
+</section>
+<footer>
+    <p><strong>JANORA COMFORT</strong></p>
+    <p>Comfort in Every Moment</p>
+</footer>
+
+</body>
+</html>
