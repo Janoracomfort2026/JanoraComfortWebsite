@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Products | Janora Comfort</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8f0e6;
+    color: #4b1725;
+}
+
+header {
+    text-align: center;
+    padding: 25px 15px;
+    background: #701f35;
+    color: white;
+}
+
+header h1 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    letter-spacing: 3px;
+    margin: 10px;
+}
+
+header p {
+    color: #f0d6a0;
+    font-size: 19px;
+}
+
+nav {
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #701f35;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px;
+}
+nav a {
+    color: #701f35;
+    text-decoration: none;
+    margin: 0 13px;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #a77b35;
+}
+
+
+.page-title {
+    text-align: center;
+    padding: 20px;
+}
+
+.page-title h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    color: #701f35;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    padding: 20px 5%;
+}
+
+.product-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 14px #00000012;
+}
+
+.product-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    color: #701f35;
+    font-size: 28px;
+    font-family: Georgia, serif;
+}
+
+.product-card p {
+    line-height: 1.6;
+}
+
+.enquire {
+    display: inline-block;
+    background: #701f35;
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.enquire:hover {
+    background: #a77b35;
+}
+
+footer {
+    background: #701f35;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 29px;
+    }
+
+    .products {
+        padding: 15px;
+    }
+}
+.product-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background: linear-gradient(120deg, #701f35, #ead8c5);
+    color: #3b0b19;
+}
+
+.product-page-logo {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.product-brand-text h1 {
+    color: #3b0b19;
+    font-family: Georgia, serif;
+    font-size: 38px;
+    letter-spacing: 2px;
+    margin: 5px 0;
+}
+
+.product-brand-text p {
+    color: #970707;
+    font-size: 23px;
+    margin: 5px 0;
+}
+
+@media (max-width: 500px) {
+    .product-header {
+        gap: 12px;
+        padding: 15px 8px;
+    }
+
+    .product-page-logo {
+        width: 75px;
+        height: 75px;
+    }
+
+    .product-brand-text h1 {
+        font-size: 23px;
+        letter-spacing: 1px;
+    }
+
+    .product-brand-text p {
+        font-size: 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="product-header">
+    <img src="janora-logo.jpg" alt="Janora Comfort Logo"
+         class="product-page-logo">
+
+    <div class="product-brand-text">
+        <h1>JANORA COMFORT</h1>
+        <p>Comfort in Every Moment</p>
+    </div>
+</header>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+
+<section class="page-title">
+    <h2>Our Products</h2>
+    <p style="font-size: 24px;">Explore our personal care range.</p>
+    <p style="font-size: 22px;">Pack quantity: 6 pads where applicable. Prices available on enquiry.</p>
+</section>
+
+<section class="products">
+
+    <!-- Straight Cotton Pad -->
+    <div class="product-card">
+        <img src="straight cotton pad 280mm.jpeg" alt="Straight Cotton Sanitary Pad">
+        <h3>Straight Cotton Pad</h3>
+        <p style="font-size: 28px; font-weight: bold;">280 mm</p>
+        <a class="enquire" href="https://wa.me/919994016624?text=Hello%20Janora%20Comfort%2C%20I%20want%20to%20enquire%20about%20Straight%20Cotton%20Pad%20280mm" target="_blank">Enquire on WhatsApp</a>
+    </div>
+
+    <!-- Maxi Cotton -->
+    <div class="product-card">
+        <img src="maxi cotton 320mm.jpeg" alt="Maxi Cotton Sanitary Pad">
+        <h3>Maxi Cotton</h3>
+        <p style="font-size: 28px; font-weight: bold;">320 mm</p>
+        <a class="enquire" href="https://wa.me/919994016624?text=Hello%20Janora%20Comfort%2C%20I%20want%20to%20enquire%20about%20Maxi%20Cotton%20320mm" target="_blank">Enquire on WhatsApp</a>
+    </div>
+
+    <!-- Pure Cotton -->
+    <div class="product-card">
+        <img src="pure cotton 360mm.jpeg" alt="Pure Cotton Sanitary Pad">
+        <h3>Pure Cotton</h3>
+        <p style="font-size: 28px; font-weight: bold;">360 mm</p>
+        <a class="enquire" href="https://wa.me/919994016624?text=Hello%20Janora%20Comfort%2C%20I%20want%20to%20enquire%20about%20Pure%20Cotton%20360mm" target="_blank">Enquire on WhatsApp</a>
+    </div>
+
+    <!-- Ring Anion -->
+    <div class="product-card">
+        <img src="ring anion 330mm.jpeg" alt="Ring Anion Sanitary Pad">
+        <h3>Ring Anion</h3>
+        <p style="font-size: 28px; font-weight: bold;">330 mm</p>
+        <a class="enquire" href="https://wa.me/919994016624?text=Hello%20Janora%20Comfort%2C%20I%20want%20to%20enquire%20about%20Ring%20Anion%20Pads" target="_blank">Enquire on WhatsApp</a>
+    </div>
+
+    <!-- Green Anion 320 mm -->
+    <div class="product-card">
+        <img src="green anion 320mm.jpeg" alt="Green Anion 320mm">
+        <h3>Green Anion Sanitary Pad</h3>
+        <p style="font-size: 28px; font-weight: bold;">320 mm</p>
+        <a class="enquire" href="https://wa.me/919994016624?text=I%20want%20to%20enquire%20about%20Green%20Anion%20320mm" target="_blank">Enquire on WhatsApp</a>
+    </div>
+
+    <!-- Green Anion 350 mm -->
+    <div class="product-card">
+        <img src="green anion 350mm.jpeg" alt="Green Anion 350mm">
+        <h3>Green Anion Sanitary Pad</h3>
+        <p style="font-size: 28px; font-weight: bold;">350 mm</p>
+        <a class="enquire" href="https://wa.me/919994016624?text=I%20want%20to%20enquire%20about%20Green%20Anion%20350mm" target="_blank">Enquire on WhatsApp</a>
+    </div>
+
+    <!-- Green Anion 410 mm -->
+    <div class="product-card">
+        <img src="green anion 410mm.jpeg" alt="Green Anion 410mm">
+        <h3>Green Anion Sanitary Pad</h3>
+        <p style="font-size: 28px; font-weight: bold;">410 mm</p>
+        <a class="enquire" href="https://wa.me/919994016624?text=I%20want%20to%20enquire%20about%20Green%20Anion%20410mm" target="_blank">Enquire on WhatsApp</a>
+    </div>
+
+    <!-- Bamboo 240 mm -->
+    <div class="product-card">
+        <img src="bamboo 240mm.jpeg" alt="Bamboo Pad 240mm">
+        <h3>Bamboo Sanitary Pad</h3>
+        <p style="font-size: 28px; font-weight: bold;">240 mm</p>
+        <a class="enquire" href="https://wa.me/919994016624?text=I%20want%20to%20enquire%20about%20Bamboo%20240mm" target="_blank">Enquire on WhatsApp</a>
+    </div>
+
+    <!-- Bamboo 290 mm -->
+    <div class="product-card">
+        <img src="bamboo 290mm.jpeg" alt="Bamboo Pad 290mm">
+        <h3>Bamboo Sanitary Pad</h3>
+        <p style="font-size: 28px; font-weight: bold;">290 mm</p>
+        <a class="enquire" href="https://wa.me/919994016624?text=I%20want%20to%20enquire%20about%20Bamboo%20290mm" target="_blank">Enquire on WhatsApp</a>
+    </div>
+
+    <!-- Bamboo 320 mm -->
+    <div class="product-card">
+        <img src="bamboo 320mm.jpeg" alt="Bamboo Pad 320mm">
+        <h3>Bamboo Sanitary Pad</h3>
+        <p style="font-size: 28px; font-weight: bold;">320 mm</p>
+        <a class="enquire" href="https://wa.me/919994016624?text=I%20want%20to%20enquire%20about%20Bamboo%20320mm" target="_blank">Enquire on WhatsApp</a>
+    </div>
+
+    <!-- Bamboo 330 mm -->
+    <div class="product-card">
+        <img src="bamboo 330mm.jpeg" alt="Bamboo Pad 330mm">
+        <h3>Bamboo Sanitary Pad</h3>
+        <p style="font-size: 28px; font-weight: bold;">330 mm</p>
+        <a class="enquire" href="https://wa.me/919994016624?text=I%20want%20to%20enquire%20about%20Bamboo%20330mm" target="_blank">Enquire on WhatsApp</a>
+    </div>
+
+    <!-- Bamboo 350 mm -->
+    <div class="product-card">
+        <img src="bamboo 350mm.jpeg" alt="Bamboo Pad 350mm">
+        <h3>Bamboo Sanitary Pad</h3>
+        <p style="font-size: 28px; font-weight: bold;">350 mm</p>
+        <a class="enquire" href="https://wa.me/919994016624?text=I%20want%20to%20enquire%20about%20Bamboo%20350mm" target="_blank">Enquire on WhatsApp</a>
+    </div>
+
+    <!-- Period Panty -->
+    <div class="product-card">
+        <img src="Period Panty.jpeg" alt="Period Panty">
+        <h3>Period Panty</h3>
+        <p>Ask us about available sizes.</p>
+        <a class="enquire" href="https://wa.me/919994016624?text=Hello%20Janora%20Comfort%2C%20I%20want%20to%20enquire%20about%20Period%20Panties" target="_blank">Enquire on WhatsApp</a>
+    </div>
+
+    <!-- Adult Diapers -->
+    <div class="product-card">
+        <img src="Adult Diaper.jpeg" alt="Adult Diaper">
+        <h3>Adult Diapers</h3>
+        <p>Ask us about available sizes.</p>
+        <a class="enquire" href="https://wa.me/919994016624?text=Hello%20Janora%20Comfort%2C%20I%20want%20to%20enquire%20about%20Adult%20Diapers" target="_blank">Enquire on WhatsApp</a>
+    </div>
+
+    <!-- Baby Pampers -->
+    <div class="product-card">
+        <img src="Baby Pampers.jpeg" alt="Baby Pampers">
+        <h3>Baby Pampers</h3>
+        <p>Ask us about available sizes.</p>
+        <a class="enquire" href="https://wa.me/919994016624?text=Hello%20Janora%20Comfort%2C%20I%20want%20to%20enquire%20about%20Baby%20Pampers" target="_blank">Enquire on WhatsApp</a>
+    </div>
+
+</section>
+
+
+
+</body>
+</html>
