@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Janora Comfort</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f0e7;
+            color: #42252d;
+            line-height: 1.8;
+        }
+        
+.brand-header {
+    background: linear-gradient(
+        100deg,
+        #641f32 100%
+    );
+    padding: 20px;
+}
+
+.brand-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.brand-logo {
+    width: 90px;
+    height: 90px;
+    max-width: 90px;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+}
+
+.brand-details {
+    text-align: left;
+}
+
+.brand-details h1 {
+    margin: 0;
+    color: #c2bdb8;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.brand-details p {
+    margin: 5px 0 0;
+    color: #b0b0b0;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+@media (max-width: 600px) {
+    .brand-container {
+        gap: 12px;
+    }
+
+    .brand-logo {
+        width: 85px;
+        height: 85px;
+    }
+
+    .brand-details h1 {
+        font-size: 25px;
+    }
+
+    .brand-details p {
+        font-size: 14px;
+    }
+}
+    
+        header {
+            background: #641f32;
+            color: #fff5e9;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        .brand {
+            font-family: Georgia, serif;
+            font-size: 38px;
+            letter-spacing: 3px;
+        }
+
+        .tagline {
+            color: #e9ce9b;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            background: #4b1726;
+            padding: 14px 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff5e9;
+            text-decoration: none;
+            margin: 0 13px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #e9ce9b;
+        }
+
+        .hero {
+            background: linear-gradient(
+                135deg, #ead8c3, #f8f1e8
+            );
+            text-align: center;
+            padding: 65px 20px;
+            border-bottom: 3px solid #c9a76b;
+        }
+
+        .hero h1 {
+            font-family: Georgia, serif;
+            font-size: 42px;
+            color: #641f32;
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            font-size: 17px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 35px 20px;
+        }
+
+        .section {
+            background: #fffaf4;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            border: 1px solid #e4d3bd;
+            box-shadow: 0 5px 18px
+                rgba(75, 23, 38, 0.07);
+        }
+
+        h2 {
+            font-family: Georgia, serif;
+            color: #641f32;
+            font-size: 27px;
+            margin-bottom: 15px;
+        }
+
+        .gold-line {
+            width: 65px;
+            height: 3px;
+            background: #c9a76b;
+            margin-bottom: 20px;
+        }
+
+        .values {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(200px, 1fr));
+            gap: 18px;
+            margin-top: 20px;
+        }
+
+        .value-card {
+            background: #f3e6d7;
+            padding: 22px;
+            border-radius: 10px;
+            border-bottom: 3px solid #c9a76b;
+        }
+
+        .value-card h3 {
+            color: #641f32;
+            margin-bottom: 8px;
+        }
+
+        .closing {
+            background: #641f32;
+            color: #fff5e9;
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+
+        .closing h2 {
+            color: #e9ce9b;
+        }
+
+        .contact-button {
+            display: inline-block;
+            background: #c9a76b;
+            color: #421a27;
+            text-decoration: none;
+            padding: 12px 25px;
+            margin-top: 18px;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #4b1726;
+            color: #fff5e9;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        footer a {
+            color: #e9ce9b;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        @media (max-width: 600px) {
+            .brand {
+                font-size: 29px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .section {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+   <header class="brand-header">
+    <div class="brand-container">
+        <img src="janora-logo.jpg"
+             alt="Janora Comfort Logo"
+             class="brand-logo">
+
+        <div class="brand-details">
+            <h1>JANORA COMFORT</h1>
+            <p>Comfort in Every Moment</p>
+        </div>
+    </div>
+</header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <section class="hero">
+        <h1>About Janora Comfort</h1>
+        <p>
+            Thoughtfully offering feminine care essentials
+            with a focus on comfort, confidence and care.
+        </p>
+    </section>
+
+    <main>
+
+        <section class="section">
+            <h2>Who We Are</h2>
+            <div class="gold-line"></div>
+            <p>
+                Welcome to JANORA COMFORT, a feminine care
+                brand committed to helping women explore
+                personal care products suited to their needs.
+            </p>
+            <p>
+                We offer a range of sanitary pads and other
+                personal care essentials, with different
+                varieties designed for different preferences.
+                Our aim is to make product information clear
+                and help customers choose with confidence.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Our Mission</h2>
+            <div class="gold-line"></div>
+            <p>
+                Our mission is to make feminine care shopping
+                simple, comfortable and convenient by offering
+                a variety of products and helpful customer
+                support.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Our Vision</h2>
+            <div class="gold-line"></div>
+            <p>
+                Our vision is to build a trusted feminine care
+                brand known for thoughtful service, product
+                choice and a customer-first approach.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>What Matters to Us</h2>
+            <div class="gold-line"></div>
+
+            <div class="values">
+
+                <div class="value-card">
+                    <h3>Comfort</h3>
+                    <p>
+                        Helping customers explore products
+                        that suit their comfort preferences.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <h3>Care</h3>
+                    <p>
+                        Treating personal care needs with
+                        attention, respect and understanding.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <h3>Choice</h3>
+                    <p>
+                        Offering different product varieties
+                        to suit different customer needs.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <h3>Trust</h3>
+                    <p>
+                        Providing clear product information
+                        and responsive customer assistance.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="closing">
+            <h2>Comfort in Every Moment</h2>
+            <p>
+                Thank you for being part of the
+                JANORA COMFORT journey.
+            </p>
+            <a href="products.html" class="contact-button">
+                Explore Our Products
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 JANORA COMFORT. All rights reserved.</p>
+        
+        <p>
+            <a href="terms.html">Terms &amp; Conditions</a>
+            <Span>|</Span>
+            <a href="privacy.html">Privacy Policy</a>
+        </p>
+    </footer>
+
+</body>
+</html>
